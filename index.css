@@ -1,35 +1,41 @@
-.navigation {
-    /* display: flex; */
-    
-    position: fixed;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
+.navigation {
+  /* display: flex; */
+
+  position: fixed;
+}
 
 .logo {
-width: 179px;
+  width: 179px;
 }
 
 .links li {
-    list-style-type: none;
+  list-style-type: none;
 }
 
 .hero {
-    background-image: url(https://netology-code.github.io/html-2-diploma/sources/images/banner-bg.jpg);
+  background-image: url(https://netology-code.github.io/html-2-diploma/sources/images/banner-bg.jpg);
 }
 
 .hero h1 {
-    font-family: OpenSans;
-    font-size: 45px;
-    line-height: 1.6;
-    color: #ffffff;
-    text-transform: uppercase;
-    width: 700px;
-    text-align: center;
-    margin: auto;
+  font-family: OpenSans;
+  font-size: 45px;
+  line-height: 1.6;
+  color: #ffffff;
+  text-transform: uppercase;
+  width: 700px;
+  text-align: center;
+  margin: auto;
+  padding: 195px 0 147px 0;
 }
 
 @font-face {
-    font-family:OpenSans;
-    src: url(https://netology-code.github.io/html-2-diploma/sources/fonts/OpenSans-Bold.woff);
-    font-style: bold;
+  font-family: OpenSans;
+  src: url(https://netology-code.github.io/html-2-diploma/sources/fonts/OpenSans-Bold.woff);
+  font-style: bold;
 }
