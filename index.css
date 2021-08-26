@@ -4,9 +4,13 @@
   box-sizing: border-box;
 }
 
-.navigation {
-  /* display: flex; */
+body {
+  font-family: OpenSans;
+}
 
+.navigation {
+  /* display: flex;
+justify-content: ; */
   position: fixed;
 }
 
@@ -19,19 +23,45 @@
 }
 
 .hero {
+  position: relative;
+
+  background-color: #0c1524;
   background-image: url(https://netology-code.github.io/html-2-diploma/sources/images/banner-bg.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
 }
 
-.hero h1 {
-  font-family: OpenSans;
+.hero::after {
+  content: '';
+  position: absolute;
+  top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+  background-color: #000000;
+  opacity: 0.6;
+  z-index: 1;
+}
+
+.hero-content {
+  position: relative;
+  z-index: 2;
+
+  margin-left: auto;
+  margin-right: auto;
+
+  max-width: 700px;
+  padding: 195px 0 147px 0;
+}
+
+.hero-title {
   font-size: 45px;
   line-height: 1.6;
   color: #ffffff;
   text-transform: uppercase;
-  width: 700px;
   text-align: center;
-  margin: auto;
-  padding: 195px 0 147px 0;
+  
 }
 
 @font-face {
