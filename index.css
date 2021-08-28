@@ -103,3 +103,33 @@ body {
   src: url(https://netology-code.github.io/html-2-diploma/sources/fonts/OpenSans-Regular.woff);
   font-weight: normal;
 }
+
+
+.general-content {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  margin-top: 64px;
+}
+
+.main {
+  max-width: 777px;
+}
+
+.post {
+ display: flex;
+}
+
+.post img {
+  width: 381px;
+}
+
+.sidebar {
+  max-width: 272px;
+  margin-left: 120px;
+}
+
+.sidebar img {
+  width: 70px;
+  align-self: center;
+}
