@@ -132,7 +132,6 @@ body {
 
 .tags li a {
   font-size: 14px;
-  line-height: 2.8;
   color: #b59f5b;
   font-weight: bold;
   text-transform: uppercase;
@@ -148,7 +147,6 @@ body {
 
 .post-content h3 a {
   font-size: 20px;
-  line-height: 1.2;
   color: #0f0d0e;
   font-weight: bold;
   text-transform: uppercase;
@@ -157,14 +155,12 @@ body {
 
 span.date {
   font-size: 12px;
-  line-height: 3.3;
   color: #888888;
   margin-right: 14px;
 }
 
 span.author {
   font-size: 12px;
-  line-height: 3.3;
   font-weight: bold;
   color: #000000;
 }
