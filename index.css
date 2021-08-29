@@ -204,6 +204,10 @@ span.author {
   text-decoration: none;
 }
 
+.sidebar section {
+  margin-bottom: 60px;
+}
+
 .section-title {
   font-size: 14px;
   line-height: 1.28;
@@ -231,7 +235,27 @@ span.author {
 
 
 
+.sidebar-tags {
+  display: flex;
+  flex-wrap: wrap;
+  font-size: 12px;
+  font-weight: bold;
+  list-style-type: none; 
+  text-transform: uppercase;
+  text-align: center;
+}
 
+.sidebar-tags li {
+  border: 3px solid #ededed;
+  margin-right: 5px;
+  margin-bottom: 6px;
+  padding: 4px 14px;
+}
+
+.sidebar-tags li a {
+  color: inherit;
+  text-decoration: none;
+}
 
 .themes {
   font-size: 14px;
