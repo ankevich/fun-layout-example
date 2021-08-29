@@ -229,6 +229,41 @@ span.author {
   margin-bottom: 22px;
 }
 
+
+
+
+
+.themes {
+  font-size: 14px;
+  font-weight: bold;
+  list-style-type: none;
+}
+
+.themes li {
+  border-bottom: 1px solid #eeeeee;
+  padding-bottom: 15px;
+  padding-top: 15px;
+}
+
+.themes li a {
+  color: #000000;
+  text-decoration: none;
+  
+}
+
+.themes sup {
+color: #b59f5b;
+margin-left: 4px;
+}
+
+
+
+
+
+
+
+
+
 .footer {
   max-width: 1170px;
   margin-left: auto;
