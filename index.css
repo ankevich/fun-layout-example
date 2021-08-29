@@ -193,6 +193,27 @@ span.author {
   font-size: 14px;
   line-height: 1.28;
   color: #000000;
+  font-weight: bold;
   text-transform: uppercase;
   text-decoration: none;
+}
+
+.section-title {
+  font-size: 14px;
+  line-height: 1.28;
+  color: #000000;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.divider {
+  display: block;
+  background-color: #e1d9bd;
+  width: 66px;
+  height: 3px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 13px;
+  margin-bottom: 28px;
 }
