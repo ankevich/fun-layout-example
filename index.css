@@ -240,6 +240,9 @@ span.author {
   margin-bottom: 22px;
 }
 
+
+
+
 .search {
   display: flex;
 }
@@ -249,7 +252,6 @@ label {
 }
 
 .search .button {
-  display: block;
   border: none;
   background-color: #b59f5b;
   background-image: url(https://netology-code.github.io/html-2-diploma/sources/images/search.svg);
@@ -269,6 +271,49 @@ label {
   height: 48px;
   font-size: 13px;
 }
+
+
+
+.subscribe {
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  width: 100%;
+}
+
+.subscribe .button {
+  border: none;
+  background-color: #b59f5b;
+  background-image: url(https://netology-code.github.io/html-2-diploma/sources/im.subscribesvg);
+  background-repeat: no-repeat;
+  background-size: 18px;
+  background-position: center;
+  font-size: 14px;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #ffffff;
+  min-width: 48px;
+  min-height: 48px;
+  margin-top: 18px;
+}
+
+.subscribe .field {
+  border: none;
+  width: 100%;
+  background-color: #f4f7f6;
+  color: #818383;
+  padding-left: 18px;
+  height: 48px;
+  font-size: 13px;
+}
+
+
+
+
+
+
 
 .sidebar-tags {
   display: flex;
