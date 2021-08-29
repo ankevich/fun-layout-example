@@ -223,3 +223,8 @@ margin-top: 54px;
   margin-top: 13px;
   margin-bottom: 28px;
 }
+
+.sidebar-post {
+  display: flex;
+  margin-bottom: 22px;
+}
