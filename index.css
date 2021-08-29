@@ -4,7 +4,7 @@
   box-sizing: border-box;
 }
 
-.visuallyhidden {
+.visually-hidden {
   position: absolute;
   clip: rect(1px 1px 1px 1px);
   width: 1px;
@@ -32,7 +32,7 @@ body {
 }
 
 .logo {
-  width: 179px;
+  min-width: 179px;
   padding-top: 28px;
 }
 
@@ -133,12 +133,14 @@ body {
 
 .post img {
   width: 381px;
+  height: 294px;
   margin-right: 30px;
 }
 
 .tags {
   list-style-type: none;
   display: flex;
+  flex-wrap: wrap;
 }
 
 .tags li a {
@@ -270,8 +272,12 @@ label {
   padding-left: 18px;
   height: 48px;
   font-size: 13px;
+
 }
 
+.search .field :focus {
+  border: none;
+}
 
 
 .subscribe {
