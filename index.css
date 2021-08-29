@@ -4,6 +4,13 @@
   box-sizing: border-box;
 }
 
+.visuallyhidden {
+  position: absolute;
+  clip: rect(1px 1px 1px 1px);
+  width: 1px;
+  height: 1px;
+}
+
 body {
   font-family: OpenSans;
 }
@@ -233,14 +240,42 @@ span.author {
   margin-bottom: 22px;
 }
 
+.search {
+  display: flex;
+}
 
+label {
+  width: 100%;
+}
+
+.search .button {
+  display: block;
+  border: none;
+  background-color: #b59f5b;
+  background-image: url(https://netology-code.github.io/html-2-diploma/sources/images/search.svg);
+  background-repeat: no-repeat;
+  background-size: 18px;
+  background-position: center;
+  min-width: 48px;
+  min-height: 48px;
+}
+
+.search .field {
+  border: none;
+  width: 100%;
+  background-color: #f4f7f6;
+  color: #818383;
+  padding-left: 18px;
+  height: 48px;
+  font-size: 13px;
+}
 
 .sidebar-tags {
   display: flex;
   flex-wrap: wrap;
   font-size: 12px;
   font-weight: bold;
-  list-style-type: none; 
+  list-style-type: none;
   text-transform: uppercase;
   text-align: center;
 }
@@ -272,21 +307,12 @@ span.author {
 .themes li a {
   color: #000000;
   text-decoration: none;
-  
 }
 
 .themes sup {
-color: #b59f5b;
-margin-left: 4px;
+  color: #b59f5b;
+  margin-left: 4px;
 }
-
-
-
-
-
-
-
-
 
 .footer {
   max-width: 1170px;
