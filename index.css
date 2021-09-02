@@ -28,13 +28,14 @@ body {
   bottom: 0;
   background-color: #000000;
   opacity: 0.6;
-  z-index: 1;
+  z-index: -1;
 }
 
 .header-content {
   width: 1200px;
   margin-left: auto;
   margin-right: auto;
+  padding: 28px 15px 140px 15px;
 }
 
 .hero-title {
@@ -42,9 +43,7 @@ body {
   z-index: 3;
 
   max-width: 700px;
-  margin-left: auto;
-  margin-right: auto;
-  padding: 195px 0 147px 0;
+  margin: 120px auto 0 auto;
 
   font-size: 45px;
   line-height: 1.6;
@@ -53,28 +52,24 @@ body {
   color: #ffffff;
 }
 
-.navigation {
-  position: absolute;
-  top: 0;
-  z-index: 4;
+nav {
   display: flex;
+  align-items: center;
   justify-content: space-between;
   width: 100%;
   max-width: 1170px;
 }
 
-.logo {
-  min-width: 179px;
-  padding-top: 28px;
+.logo img {
+  width: 179px;
 }
 
 .links {
   display: flex;
-  margin-top: 45px;
 }
 
 .links li {
-  padding: 0 35px 0 0;
+  margin: 0 35px 0 0;
   list-style-type: none;
 }
 
