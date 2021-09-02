@@ -120,8 +120,11 @@ nav {
   list-style-type: none;
 }
 
-.tags li a {
+.tags li {
   margin-right: 20px;
+}
+
+.tags li a {
   font-size: 14px;
   font-weight: bold;
   text-transform: uppercase;
@@ -129,13 +132,13 @@ nav {
   color: #b59f5b;
 }
 
-.post-content h3 {
+.post-content h2 {
   margin-top: 10px;
   margin-bottom: 32px;
   line-height: 1.2;
 }
 
-.post-content h3 a {
+.post-content h2 a {
   font-size: 20px;
   font-weight: bold;
   text-transform: uppercase;
@@ -203,11 +206,11 @@ span.author {
   margin-right: 20px;
 }
 
-.sidebar-content h3 {
+.sidebar-content h2 {
   line-height: 0;
 }
 
-.sidebar-content h3 a {
+.sidebar-content h2 a {
   font-size: 14px;
   line-height: 1.28;
   font-weight: bold;
