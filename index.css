@@ -85,7 +85,6 @@ nav {
   padding: 0;
 }
 
-
 .general-content {
   display: flex;
   justify-content: space-between;
@@ -187,7 +186,8 @@ span.author {
   color: #000000;
 }
 
-.divider {
+.section-title::after {
+  content: "";
   display: block;
   width: 66px;
   height: 3px;
@@ -206,11 +206,13 @@ span.author {
   margin-right: 20px;
 }
 
-.sidebar-content h2 {
+.sidebar-content h3,
+.sidebar-content h4 {
   line-height: 0;
 }
 
-.sidebar-content h2 a {
+.sidebar-content h3 a,
+.sidebar-content h4 a {
   font-size: 14px;
   line-height: 1.28;
   font-weight: bold;
