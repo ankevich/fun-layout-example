@@ -35,7 +35,8 @@ body {
   width: 1200px;
   margin-left: auto;
   margin-right: auto;
-  padding: 28px 15px 140px 15px;
+  padding: 28px 15px 130px 15px;
+  line-height: 1.6;
 }
 
 .hero-title {
@@ -43,7 +44,7 @@ body {
   z-index: 3;
 
   max-width: 700px;
-  margin: 120px auto 0 auto;
+  margin: 100px auto 0 auto;
 
   font-size: 45px;
   line-height: 1.6;
@@ -69,7 +70,7 @@ nav {
 }
 
 .links li {
-  margin: 0 35px 0 0;
+  margin: 0 0 0 35px;
   list-style-type: none;
 }
 
@@ -406,4 +407,18 @@ label {
   font-family: OpenSans;
   src: url(https://netology-code.github.io/html-2-diploma/sources/fonts/OpenSans-Regular.woff);
   font-weight: normal;
+}
+
+
+body::after {
+  content: "";
+  display: block;
+  width: 1660px;
+  height: 3207px;
+  background-image: url("https://raw.githubusercontent.com/netology-code/html-2-diploma/master/sources/NOEMI_Modern_ru.jpg");
+  position: absolute;
+  top: 0;
+  left: calc(50% - 830px);
+  opacity: 0.3;
+	z-index: 999;
 }
