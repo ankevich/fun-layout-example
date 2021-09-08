@@ -416,17 +416,3 @@ label {
   src: url(https://netology-code.github.io/html-2-diploma/sources/fonts/OpenSans-Regular.woff);
   font-weight: normal;
 }
-
-
-body::after {
-  content: "";
-  display: block;
-  width: 1660px;
-  height: 3207px;
-  background-image: url("https://raw.githubusercontent.com/netology-code/html-2-diploma/master/sources/NOEMI_Modern_ru.jpg");
-  position: absolute;
-  top: 0;
-  left: calc(50% - 830px);
-  opacity: 0.3;
-	z-index: 999;
-}
