@@ -94,7 +94,6 @@ nav {
 }
 
 .trends h2 {
-  padding-bottom: 28px;
   font-size: 20px;
   font-weight: bold;
   line-height: 1.5;
@@ -121,9 +120,11 @@ nav {
 
 .trends-post {
   display: flex;
+  align-items: flex-end;
   width: 25%;
   height: 348px;
   margin-right: 4px;
+  padding: 30px;
 
   background-repeat: no-repeat;
   background-position: center center;
@@ -161,8 +162,21 @@ nav {
   z-index: -1;
 }
 
+.trends-post-content {
+  padding: 35px 32px;
+  border: 3px solid rgb(181, 159, 91, 0.6);
+}
+
 .trends-post-content h3 {
-  color: white;
+  font-size: 20px;
+  font-weight: 1.2;
+  color: #ffffff;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.trends-post-content .tags {
+  margin-bottom: 12px;
 }
 
 .general-content {
