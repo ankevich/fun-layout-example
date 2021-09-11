@@ -520,6 +520,7 @@
     </div>
 
     <div class="popup">
+      <div class="popup-container">
       <button class="popup-close" type="button">Закрыть окно</button>
       <form class="popup-form">
         <h2>Ваш фидбек</h2>
@@ -534,22 +535,35 @@
         </label>
         <label>
           <span class="form-label">Вы подписаны на e-mail рассылку?</span>
-          <div class="ssubscription-radio-button">
-            <input type="radio" name="subscription" value="true" />
-            <label>Да</label>
-            <input type="radio" name="subscription" value="false" />
-            <label>Нет</label>
+          <div class="subscription-radio-button">
+            <input
+              class="golden-radio"
+              type="radio"
+              name="subscription"
+              value="true"
+            />
+            <label class="radio-label">Да</label>
+            <input
+              class="golden-radio"
+              type="radio"
+              name="subscription"
+              value="false"
+            />
+            <label class="radio-label">Нет</label>
           </div>
         </label>
         <label>
-          <span class="form-label">Расскажите, какой контент вы хотели бы видеть на нашем сайте?</span>
-          <textarea placeholder="Может, больше рецептов?"></textarea>
+          <span class="form-label"
+            >Расскажите, какой контент вы хотели бы видеть на нашем сайте?</span
+          >
         </label>
+        <textarea class="popup-textarea" placeholder="Может, больше рецептов?"
+        ></textarea>
 
         <span class="visually-hidden">Кнопка отправить</span>
         <button class="button">Отправить</button>
-        
       </form>
+    </div>
     </div>
   </body>
 </html>
