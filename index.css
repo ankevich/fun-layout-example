@@ -615,7 +615,7 @@ span.strike {
 }
 
 .popup {
-  display: flex;
+  display: flex; 
   flex-direction: column;
   justify-content: center;
   align-items: center;
@@ -635,13 +635,17 @@ span.strike {
 
 .popup-close {
   align-self: flex-end;
-  
+  display: block;
+  width: 18px;
+  height: 18px;
+  margin-bottom: 8px;
+  background-color: transparent;
+  background-image: url(svg/form-x.svg);
+  background-position: center;
+
+  border: 0;
 }
 
-.popup-close::before {
-  content: url(svg/form-x.svg);
-  width: 24px
-}
 
 .popup-form {
   max-width: 400px;
