@@ -615,7 +615,8 @@ span.strike {
 }
 
 .popup {
-  display: flex; 
+  display: none;
+  /* display: flex;  */
   flex-direction: column;
   justify-content: center;
   align-items: center;
@@ -729,11 +730,23 @@ span.strike {
   background-size: 20px;
 }
 
-.golden-radio:checked ~ .radio-label::before {
+.radio-label::after {
+  content: "";
+  display: none;
+  position: absolute;
+  vertical-align: middle;
+  
+  width: 20px;
+  height: 20px;
+  
   background-image: url(svg/form-circle.svg);
   background-repeat: no-repeat;
   background-position: center center;
   background-size: 20px;
+}
+
+.golden-radio:checked + .radio-label::after {
+  display: inline-block;
 }
 
 .golden-radio {
