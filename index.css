@@ -15,15 +15,14 @@
   padding: 0;
   box-sizing: border-box;
 }
-
 body {
   font-family: OpenSans;
 }
 
 .header {
-  width: 100%;
+  min-width: 100%;
   background-color: #0c1524;
-  background-image: url(https://netology-code.github.io/html-2-diploma/sources/images/banner-bg.jpg);
+  background-image: url(images/banner-bg.jpg);
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
@@ -44,7 +43,7 @@ body {
 }
 
 .header-content {
-  width: 1200px;
+  max-width: 1200px;
   margin-left: auto;
   margin-right: auto;
   padding: 28px 15px 130px 15px;
@@ -194,7 +193,7 @@ nav {
 .general-content {
   display: flex;
   justify-content: space-between;
-  width: 1200px;
+  max-width: 1200px;
   margin-left: auto;
   margin-right: auto;
   padding: 64px 15px 67px 15px;
@@ -647,7 +646,6 @@ span.strike {
   border: 0;
 }
 
-
 .popup-form {
   max-width: 400px;
   padding: 53px 30px;
@@ -724,7 +722,7 @@ span.strike {
   width: 20px;
   height: 20px;
 
-  background-image: url(svg/form-empty-circle.svg);
+  background-image: url(svg/form-emptfy-circle.svg);
   background-repeat: no-repeat;
   background-position: center center;
   background-size: 20px;
@@ -735,10 +733,10 @@ span.strike {
   display: none;
   position: absolute;
   vertical-align: middle;
-  
+
   width: 20px;
   height: 20px;
-  
+
   background-image: url(svg/form-circle.svg);
   background-repeat: no-repeat;
   background-position: center center;
@@ -781,4 +779,65 @@ span.strike {
   color: #ffffff;
   background-color: #b59f5b;
   border: none;
+}
+
+.general-content,
+.trends,
+.popup,
+.footer,
+.stuff {
+  display: none;
+}
+
+@media (max-width: 640px) {
+  .links,
+  .sidebar {
+    display: none;
+  }
+
+  .header {
+    background-image: url(images/banner-mobile.jpg);
+  }
+
+  .header-content {
+    padding: 220px 0 220px 0;
+  }
+
+  nav {
+    justify-content: center;
+    
+  }
+
+  .hero-title {
+    font-size: 26px;
+    line-height: 1.3;
+    margin: 44px auto 0 auto;
+  }
+
+  .logo img {
+    width: 270px;
+  }
+}
+
+/* tablet */
+@media (min-width: 641px) and (max-width: 1200px) {
+  .links,
+  .sidebar {
+    display: none;
+  }
+
+  .stuff-posts {
+    /* display: flex;
+    flex-wrap: wrap; */
+  }
+}
+
+/* Блок "В тренде". Для устройств с шириной экрана, попадающей в диапазон от 641px до 1200px, при портретной ориентации экрана карточки трендов должны быть выстроены в две колонки, а при пейзажной ориентации — в четыре.
+Для устройств с шириной экрана от 640px и меньше, при портретной ориентации экрана должна быть одна колонка с карточками, а при пейзажной — две. */
+@media (min-width: 641px) and (max-width: 1200px) and (orientation: portrait) {
+}
+@media (min-width: 641px) and (max-width: 1200px) and (orientation: landscape) {
+}
+
+@media (min-width: 1201px) {
 }
