@@ -898,12 +898,11 @@ span.strike {
   .stuff-post h4 {
     font-size: 17px;
   }
-  
+
   .stuff-post-content {
     width: 100%;
   }
 }
-
 
 /* tablet */
 @media (min-width: 641px) and (max-width: 1200px) {
@@ -993,6 +992,22 @@ span.strike {
 
   .post-text p {
     font-size: 15px;
+  }
+
+  /* Наши изделия */
+  .stuff-posts {
+    flex-wrap: wrap;
+    padding: 0 35px 50px 35px;
+  }
+
+  .stuff-post {
+    max-width: calc(50% - 12px);
+    margin: 0;
+    margin-bottom: 28px;
+  }
+
+  .stuff-post :last-child {
+    margin-bottom: 0;
   }
 }
 
