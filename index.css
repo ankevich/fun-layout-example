@@ -781,7 +781,6 @@ span.strike {
   border: none;
 }
 
-
 .popup,
 .footer,
 .stuff {
@@ -790,8 +789,7 @@ span.strike {
 
 /* mobile */
 @media (max-width: 640px) {
-  .links,
-  .sidebar {
+  .links {
     display: none;
   }
 
@@ -839,6 +837,13 @@ span.strike {
     flex-direction: column;
     margin-bottom: 0;
   }
+  .post-content h2 a {
+    font-size: 16px;
+  } 
+
+  .post-text p {
+    font-size: 14px;
+  }
 
   .post img {
     width: 100%;
@@ -846,7 +851,7 @@ span.strike {
     margin-right: 0;
     margin-bottom: 16px;
   }
-  
+
   .post-text {
     margin-top: 24px;
   }
@@ -860,12 +865,23 @@ span.strike {
     background-color: #eeeeee;
   }
 
+  .general-content {
+    flex-direction: column;
+  }
+
+  .sidebar {
+    max-width: 100%;
+    margin-left: 0;
+  }
+
+  .section-title {
+    font-size: 16px;
+  }
 }
 
 /* tablet */
 @media (min-width: 641px) and (max-width: 1200px) {
-  .links,
-  .sidebar {
+  .links {
     display: none;
   }
 
@@ -893,7 +909,7 @@ span.strike {
     font-size: 17px;
   }
 
-   .trends-posts {
+  .trends-posts {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
@@ -909,7 +925,6 @@ span.strike {
     margin-right: 0;
     margin-bottom: 3px;
   }
-
 }
 
 /* Блок "В тренде". Для устройств с шириной экрана, попадающей в диапазон от 641px до 1200px, при портретной ориентации экрана карточки трендов должны быть выстроены в две колонки, а при пейзажной ориентации — в четыре.
