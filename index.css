@@ -76,6 +76,52 @@ nav {
   width: 179px;
 }
 
+.menu__button {
+  display:none;
+
+  width: 23px;
+  height: 18px;
+  border: none;
+  padding: 0;
+
+  background-color: transparent;
+  position: relative;
+  text-indent: -9999px;
+  cursor: pointer;
+}
+
+.menu__button:before,
+.menu__button:after {
+  content: "";
+  width: 100%;
+  height: 2px;
+
+  background-color: #ffffff;
+
+  position: absolute;
+  left: 0;
+}
+
+.menu__button:before {
+  top: 0;
+}
+
+.menu__button:after {
+  bottom: 0;
+}
+
+.menu__button-label {
+  width: 100%;
+  height: 2px;
+  margin-top: -1px;
+
+  background-color: #ffffff;
+
+  position: absolute;
+  left: 0;
+  top: 50%;
+}
+
 .links {
   display: flex;
 }
@@ -792,11 +838,21 @@ span.strike {
   }
 
   .header-content {
-    padding: 220px 0 220px 0;
+    padding: 30px 15px 220px 15px;
   }
 
   nav {
+    flex-direction: column-reverse;
     justify-content: center;
+  }
+
+  .logo {
+    padding-top: 167px;
+  }
+
+  .menu__button {
+    display: block;
+    align-self: flex-end;
   }
 
   .hero-title {
@@ -945,8 +1001,9 @@ span.strike {
     background-image: url(images/banner-bg-tablet.jpg);
   }
 
-  .logo {
-    padding-left: 40px;
+  .header-content {
+    padding-left: 35px;
+    padding-right: 35px;
   }
 
   .hero-title {
@@ -1063,6 +1120,9 @@ span.strike {
   .popup-form h2 {
     font-size: 18px;
   }
+
+  /* burger */
+   
 }
 
 /* Блок "В тренде". Для устройств с шириной экрана, попадающей в диапазон от 641px до 1200px, при портретной ориентации экрана карточки трендов должны быть выстроены в две колонки, а при пейзажной ориентации — в четыре.
