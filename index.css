@@ -781,8 +781,7 @@ span.strike {
   border: none;
 }
 
-.popup,
-.footer {
+.popup {
   display: none;
 }
 
@@ -813,6 +812,7 @@ span.strike {
   .logo img {
     width: 270px;
   }
+
   /* trends */
   .trends h2 {
     font-size: 16px;
@@ -901,6 +901,16 @@ span.strike {
 
   .stuff-post-content {
     width: 100%;
+  }
+
+  /* footer */
+  .social-links {
+    margin-left: 15px;
+    margin-right: 15px;
+  }
+
+  .copyright {
+    margin: 48px 0;
   }
 }
 
@@ -1008,6 +1018,20 @@ span.strike {
 
   .stuff-post :last-child {
     margin-bottom: 0;
+  }
+
+  /* footer */
+  .footer {
+    margin-top: 0;
+  }
+
+  .social-links {
+    margin-left: 35px;
+    margin-right: 35px;
+  }
+
+  .copyright {
+    margin: 50px 0 37px 0;
   }
 }
 
