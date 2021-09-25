@@ -993,6 +993,10 @@ span.strike {
 
 /* tablet */
 @media (min-width: 641px) and (max-width: 1200px) {
+  .menu__button {
+    display: block;
+  }
+  
   .links {
     display: none;
   }
