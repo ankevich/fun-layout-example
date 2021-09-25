@@ -614,8 +614,8 @@ span.strike {
 }
 
 .popup {
-  /* display: none; */
-  display: flex;
+  display: none;
+  /* display: flex; */
   flex-direction: column;
   justify-content: center;
   align-items: center;
@@ -818,6 +818,10 @@ span.strike {
     font-size: 16px;
   }
 
+  .trends-post-content h3 {
+    font-size: 16px;
+  }
+
   .trends-posts {
     display: flex;
     flex-direction: column;
@@ -958,6 +962,10 @@ span.strike {
 
   /* trends */
   .trends h2 {
+    font-size: 18px;
+  }
+
+  .trends-post-content h3 {
     font-size: 17px;
   }
 
@@ -1049,6 +1057,11 @@ span.strike {
 
   .copyright {
     margin: 50px 0 37px 0;
+  }
+
+  /* popup */
+  .popup-form h2 {
+    font-size: 18px;
   }
 }
 
