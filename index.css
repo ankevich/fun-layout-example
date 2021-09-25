@@ -814,6 +814,10 @@ span.strike {
   }
 
   /* trends */
+  .trends {
+    margin-top: 40px;
+  }
+
   .trends h2 {
     font-size: 16px;
   }
@@ -1037,10 +1041,21 @@ span.strike {
 
 /* Блок "В тренде". Для устройств с шириной экрана, попадающей в диапазон от 641px до 1200px, при портретной ориентации экрана карточки трендов должны быть выстроены в две колонки, а при пейзажной ориентации — в четыре.
 Для устройств с шириной экрана от 640px и меньше, при портретной ориентации экрана должна быть одна колонка с карточками, а при пейзажной — две. */
-@media (min-width: 641px) and (max-width: 1200px) and (orientation: portrait) {
-}
 @media (min-width: 641px) and (max-width: 1200px) and (orientation: landscape) {
+  .trends-post {
+    width: calc(25% - 2px);
+  }
 }
 
-@media (min-width: 1201px) {
+@media (max-width: 640px) and (orientation: landscape) {
+  .trends-posts {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .trends-post {
+    width: calc(50% - 2px);
+    margin-right: 0;
+  }
 }
