@@ -659,8 +659,8 @@ span.strike {
 }
 
 .popup {
-  display: none;
-  /* display: flex; */
+  /* display: none; */
+  display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
@@ -718,7 +718,7 @@ span.strike {
 }
 
 .form-label {
-  display: inline-block;
+  display: block;
   font-size: 13px;
   margin-bottom: 8px;
   color: #000000;
@@ -825,6 +825,54 @@ span.strike {
   background-color: #b59f5b;
   border: none;
 }
+
+.form-row {
+  align-self: flex-start;
+  padding-bottom: 34px;
+}
+
+.radio-group-text::before {
+	content: "";
+	display: inline-block;
+	
+	width: 20px;
+	height: 20px;
+
+	background-image: url(svg/form-empty-circle.svg);
+	background-repeat: no-repeat;
+	background-position: center  center;
+	background-size: 20px;
+}
+
+.radio-group-text::before {
+  display: inline-block;
+  vertical-align: middle;
+}     
+
+.radio-group-text::before {
+  margin-right: 4px;
+}
+
+.radio-group {
+  width: initial;
+  display: inline-block;
+  font-size: 13px;
+}
+
+.radio-group:nth-of-type(n+2) {
+  margin-left: 18px;
+}
+.radio:checked ~ .radio-group-text::before {
+	background-image: url(svg/form-circle.svg);
+}
+
+.radio {
+	position: absolute;
+	clip: rect(1px, 1px, 1px, 1px);
+	height: 1px; 
+	width: 1px; 
+}
+
 
 /* mobile */
 @media (max-width: 640px) {
