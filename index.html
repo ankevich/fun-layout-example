@@ -12,17 +12,12 @@
       <div class="header-content">
         <nav>
           <a href="/" class="logo">
-            <img
-              src="svg/noemi-logo.svg"
-              alt="Логотип Noemi"
-            />
+            <img src="svg/noemi-logo.svg" alt="Логотип Noemi" />
           </a>
 
-          
           <button class="menu__button js-menu__button">
             <span class="menu__button-label">открыть меню</span>
           </button>
-          
 
           <ul class="links">
             <li><a href="/">Главная</a></li>
@@ -265,10 +260,7 @@
         <section>
           <h3 class="section-title" id="articles">Новые посты</h3>
           <div class="sidebar-post">
-            <img
-              src="images/2.jpg"
-              alt="Картинка с человеком на море"
-            />
+            <img src="images/2.jpg" alt="Картинка с человеком на море" />
             <div class="sidebar-content">
               <time class="date">14 июня 2019</time>
               <h4><a href="#">10 мест, ради которых стоит проснуться</a></h4>
@@ -276,10 +268,7 @@
           </div>
 
           <div class="sidebar-post">
-            <img
-              src="images/151.jpg"
-              alt="Девушка занимается йогой на пляже"
-            />
+            <img src="images/151.jpg" alt="Девушка занимается йогой на пляже" />
             <div class="sidebar-content">
               <time class="date">14 июня 2019</time>
               <h4><a href="#">Йога для домашних</a></h4>
@@ -287,10 +276,7 @@
           </div>
 
           <div class="sidebar-post">
-            <img
-              src="images/45.jpg"
-              alt="Уютный балкон"
-            />
+            <img src="images/45.jpg" alt="Уютный балкон" />
             <div class="sidebar-content">
               <time class="date">14 июня 2019</time>
               <h4><a href="#">Как мы превратили классное место в балкон</a></h4>
@@ -309,10 +295,7 @@
           </div>
 
           <div class="sidebar-post">
-            <img
-              src="images/7.jpg"
-              alt="Три девушки с распущенными волосами"
-            />
+            <img src="images/7.jpg" alt="Три девушки с распущенными волосами" />
             <div class="sidebar-content">
               <time class="date">14 июня 2019</time>
               <h4><a href="#">Лучшие причёски для распущенных волос</a></h4>
@@ -527,64 +510,47 @@
 
     <div class="popup">
       <div class="popup-container">
-      <button class="popup-close" type="button"></button>
-      <form class="popup-form">
-        <h2>Ваш фидбек</h2>
-        <label>
-          <span class="form-label">Как часто вы заходите на сайт?</span>
-          <select class="select">
-            <option value="daily" selected>Почти каждый день</option>
-            <option value="once-in-a-few-days">Раз в несколько дней</option>
-            <option value="once-in-a-few-weeks">Раз в несколько недель</option>
-            <option value="few-per-year">Несколько раз в год</option>
-          </select>
-        </label>
-
-        <div class="form-row">
-          <span class="form-label">Вы подписаны на e-mail рассылку?</span>
-          <label class="radio-group">
-            <input type="radio" class="radio" name="radio-group">
-            <span class="radio-group-text">Да</span>
+        <button class="popup-close" type="button"></button>
+        <form class="popup-form">
+          <h2>Ваш фидбек</h2>
+          <label>
+            <span class="form-label">Как часто вы заходите на сайт?</span>
+            <select class="select">
+              <option value="daily" selected>Почти каждый день</option>
+              <option value="once-in-a-few-days">Раз в несколько дней</option>
+              <option value="once-in-a-few-weeks">
+                Раз в несколько недель
+              </option>
+              <option value="few-per-year">Несколько раз в год</option>
+            </select>
           </label>
-          <label class="radio-group">
-            <input type="radio" class="radio" name="radio-group">
-            <span class="radio-group-text">Нет</span>
-          </label>	
-        </div>	
 
-        <!-- <label>
-          <span class="form-label">Вы подписаны на e-mail рассылку?</span>      
-          <div class="subscription-radio-button">
-            <input
-              class="golden-radio"
-              type="radio"
-              name="subscription"
-              value="true"
-            />
-            <label class="radio-label">Да</label>
-            <input
-              class="golden-radio"
-              type="radio"
-              name="subscription"
-              value="false"
-            />
-            <label class="radio-label">Нет</label>
+          <div class="form-row">
+            <span class="form-label">Вы подписаны на e-mail рассылку?</span>
+            <label class="radio-group">
+              <input type="radio" class="radio" name="radio-group" />
+              <span class="radio-group-text">Да</span>
+            </label>
+            <label class="radio-group">
+              <input type="radio" class="radio" name="radio-group" />
+              <span class="radio-group-text">Нет</span>
+            </label>
           </div>
-        </label> -->
+          <label>
+            <span class="form-label"
+              >Расскажите, какой контент вы хотели бы видеть на нашем
+              сайте?</span
+            >
+          </label>
+          <textarea
+            class="popup-textarea"
+            placeholder="Может, больше рецептов?"
+          ></textarea>
 
-
-        <label>
-          <span class="form-label"
-            >Расскажите, какой контент вы хотели бы видеть на нашем сайте?</span
-          >
-        </label>
-        <textarea class="popup-textarea" placeholder="Может, больше рецептов?"
-        ></textarea>
-
-        <span class="visually-hidden">Кнопка отправить</span>
-        <button class="button">Отправить</button>
-      </form>
-    </div>
+          <span class="visually-hidden">Кнопка отправить</span>
+          <button class="button">Отправить</button>
+        </form>
+      </div>
     </div>
   </body>
 </html>
