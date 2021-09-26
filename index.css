@@ -659,8 +659,8 @@ span.strike {
 }
 
 .popup {
-  /* display: none; */
-  display: flex;
+  display: none;
+  /* display: flex; */
   flex-direction: column;
   justify-content: center;
   align-items: center;
