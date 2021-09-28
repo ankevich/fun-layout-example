@@ -10,7 +10,7 @@
   <body>
     <header class="header">
       <div class="header-content">
-        <nav>
+        <nav class="nav">
           <a href="/" class="logo">
             <img src="svg/noemi-logo.svg" alt="Логотип Noemi" />
           </a>
@@ -41,7 +41,7 @@
               <li><a href="#">Lifestyle</a></li>
               <li><a href="#">Interior</a></li>
             </ul>
-            <h3>Сейчас в тренде: сад на подоконнике</h3>
+            <h3><a href="#">Сейчас в тренде: сад на подоконнике</a></h3>
           </div>
         </article>
 
@@ -50,7 +50,11 @@
             <ul class="tags">
               <li><a href="#">Food</a></li>
             </ul>
-            <h3>Cыры на красивых картинках из интернета: какие они на вкус?</h3>
+            <h3>
+              <a href="#"
+                >Cыры на красивых картинках из интернета: какие они на вкус?</a
+              >
+            </h3>
           </div>
         </article>
 
@@ -60,7 +64,7 @@
               <li><a href="#">Lifestyle</a></li>
               <li><a href="#">Travel</a></li>
             </ul>
-            <h3>Собираемся в первый поход в горы</h3>
+            <h3><a href="#">Собираемся в первый поход в горы</a></h3>
           </div>
         </article>
 
@@ -70,7 +74,9 @@
               <li><a href="#">Food</a></li>
               <li><a href="#">Health</a></li>
             </ul>
-            <h3>Сейчас в тренде: Сколько витамина С в лимонах?</h3>
+            <h3>
+              <a href="#">Сейчас в тренде: Сколько витамина С в лимонах?</a>
+            </h3>
           </div>
         </article>
       </div>
@@ -305,7 +311,7 @@
 
         <section>
           <form class="search">
-            <label>
+            <label class="">
               <span class="visually-hidden">Введите поисковый запрос</span>
               <input
                 class="field"
@@ -314,8 +320,7 @@
                 required
               />
             </label>
-            <span class="visually-hidden">Кнопка поиска</span>
-            <button class="button"></button>
+            <button class="button"><span class="visually-hidden">Кнопка поиска</span></button>
           </form>
         </section>
 
@@ -332,7 +337,6 @@
                 required
               />
             </label>
-            <span class="visually-hidden">Кнопка подписаться</span>
             <button class="button">Подписаться</button>
           </form>
         </section>

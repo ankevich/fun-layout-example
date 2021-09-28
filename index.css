@@ -15,6 +15,7 @@
   padding: 0;
   box-sizing: border-box;
 }
+
 body {
   font-family: OpenSans;
 }
@@ -64,7 +65,7 @@ body {
   color: #ffffff;
 }
 
-nav {
+.nav {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -131,16 +132,23 @@ nav {
   list-style-type: none;
 }
 
+.links li a:hover {
+text-decoration: underline;
+}
+
+.links:first-child {
+  margin-left: 0;
+}
+
+.links:last-child {
+  padding: 0;
+}
+
 .links li a {
   font-size: 13px;
-  line-height: 2.7;
   color: #ffffff;
   text-decoration: none;
   text-transform: uppercase;
-}
-
-.links :last-child {
-  padding: 0;
 }
 
 .trends {
@@ -171,7 +179,7 @@ nav {
   width: 100%;
 }
 
-.trends-posts :last-child {
+.trends-posts:last-child {
   margin-right: 0;
 }
 
@@ -179,7 +187,7 @@ nav {
   display: flex;
   align-items: flex-end;
   width: 25%;
-  height: 348px;
+  min-height: 348px;
   margin-right: 4px;
   padding: 30px;
 
@@ -224,16 +232,21 @@ nav {
   border: 3px solid rgb(181, 159, 91, 0.6);
 }
 
-.trends-post-content h3 {
+.trends-post-content h3 a{
   font-size: 20px;
   line-height: 1.2;
   color: #ffffff;
   font-weight: bold;
   text-transform: uppercase;
+  text-decoration: none;
 }
 
 .trends-post-content .tags {
   margin-bottom: 12px;
+}
+
+.tags li a:hover {
+  text-decoration: underline;
 }
 
 .general-content {
@@ -254,7 +267,7 @@ nav {
   margin-bottom: 60px;
 }
 
-.posts :last-child {
+.posts:last-child {
   margin-bottom: 0;
 }
 
@@ -272,7 +285,6 @@ nav {
 
 .tags li {
   margin-right: 20px;
-  margin-top: -5px;
 }
 
 .tags li a {
@@ -297,8 +309,14 @@ nav {
   color: #0f0d0e;
 }
 
+.post-content h2 a:hover {
+  color: #b59f5b;
+}
+/* Не вижу смысла убирать здесь селектор по тегу, 
+так как он помогает мне оринетироваться в каком месте 
+находится данный класс. Также эти классы могут быть
+использованы для чего угодно, а так я повысила их специфичность */
 time.date {
-  margin-right: 8px;
   font-size: 12px;
   color: #888888;
 }
@@ -330,7 +348,6 @@ span.author {
 }
 
 .section-title {
-  margin-top: -4px;
   font-size: 14px;
   line-height: 1.28;
   font-weight: bold;
@@ -359,10 +376,6 @@ span.author {
   margin-right: 20px;
 }
 
-.sidebar-content {
-  margin-top: -7px;
-}
-
 .sidebar-content h3,
 .sidebar-content h4 {
   line-height: 0;
@@ -382,7 +395,9 @@ span.author {
   display: flex;
 }
 
-label {
+.search label,
+.subscribe label,
+.popup-form label {
   width: 100%;
 }
 
@@ -397,13 +412,14 @@ label {
   width: 100%;
   height: 48px;
   padding-left: 18px;
+  padding-right: 18px;
   font-size: 13px;
   color: #818383;
   background-color: #f4f7f6;
   border: none;
 }
 
-.search .field :focus {
+.search .field:focus {
   border: none;
 }
 
@@ -418,13 +434,13 @@ label {
   border: none;
 }
 
+.search .button:hover, .subscribe .button:hover {
+  background-color: #313131;
+}
+
 .subscribe {
   display: flex;
   flex-direction: column;
-}
-
-label {
-  width: 100%;
 }
 
 .subscribe .field {
@@ -455,7 +471,6 @@ label {
 .sidebar-tags {
   display: flex;
   flex-wrap: wrap;
-  margin-top: -6px;
   font-size: 12px;
   font-weight: bold;
   list-style-type: none;
@@ -468,6 +483,10 @@ label {
   margin-bottom: 6px;
   padding: 4px 14px;
   border: 3px solid #ededed;
+}
+
+.sidebar-tags li:hover {
+  border: 3px solid #b59f5b;
 }
 
 .sidebar-tags li a {
@@ -491,6 +510,10 @@ label {
 .themes li a {
   color: #000000;
   text-decoration: none;
+}
+
+.themes li a:hover {
+  color: #b59f5b;
 }
 
 .themes sup {
@@ -535,7 +558,7 @@ label {
   margin-right: 66px;
 }
 
-.stuff-posts :last-child {
+.stuff-posts:last-child {
   margin-right: 0;
 }
 
@@ -550,7 +573,7 @@ label {
 }
 
 .stuff-post h4 {
-  padding-bottom: 7px;
+  margin-bottom: 7px;
   font-size: 20px;
   line-height: 1.2;
   color: #0f0d0e;
@@ -559,7 +582,7 @@ label {
 }
 
 .stuff-post p {
-  padding-bottom: 24px;
+  margin-bottom: 24px;
   font-size: 15px;
   line-height: 1.4;
   color: #000000;
@@ -568,6 +591,10 @@ label {
 .stuff-post a {
   color: #b59f5b;
   text-decoration: none;
+}
+
+.stuff-post a:hover {
+  text-decoration: underline;
 }
 
 .stuff-post .prices {
@@ -593,6 +620,11 @@ span.strike {
   background-color: #b59f5b;
 }
 
+.stuff-post .store:hover {
+  background-color: #313131;
+  text-decoration: none;
+}
+
 .payment-info {
   width: 100%;
   display: flex;
@@ -606,6 +638,7 @@ span.strike {
   margin-left: auto;
   margin-right: auto;
   margin-top: 65px;
+  padding-bottom: 40px;
 }
 
 .social-links {
@@ -616,12 +649,16 @@ span.strike {
   background-color: #f4f7f6;
 }
 
+.social-links li {
+  margin-right: 12px;
+}
+
 .icon {
   display: block;
   width: 24px;
   height: 21px;
-  margin-right: 12px;
-  margin-left: 12px;
+  /* margin-right: 12px;
+  margin-left: 12px; */
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
@@ -650,7 +687,6 @@ span.strike {
 .copyright {
   display: block;
   margin-top: 70px;
-  margin-bottom: 40px;
   font-size: 12px;
   font-weight: bold;
   text-align: center;
@@ -843,7 +879,7 @@ span.strike {
     padding: 30px 15px 220px 15px;
   }
 
-  nav {
+  .nav {
     flex-direction: column-reverse;
     justify-content: center;
   }
@@ -889,7 +925,7 @@ span.strike {
     margin-bottom: 3px;
   }
 
-  .trends-post :last-child {
+  .trends-post:last-child {
     margin-bottom: 0;
   }
 
@@ -909,7 +945,6 @@ span.strike {
 
   .post img {
     width: 100%;
-    height: initial;
     margin-right: 0;
     margin-bottom: 16px;
   }
@@ -953,7 +988,7 @@ span.strike {
     margin-bottom: 26px;
   }
 
-  .stuff-posts :last-child {
+  .stuff-posts:last-child {
     margin-bottom: 0;
   }
 
@@ -1038,7 +1073,7 @@ span.strike {
     flex-wrap: wrap;
   }
 
-  .trends-posts :nth-last-child(-n + 2) {
+  .trends-posts:nth-last-child(-n + 2) {
     margin-bottom: 0;
   }
 
@@ -1104,7 +1139,7 @@ span.strike {
     margin-bottom: 28px;
   }
 
-  .stuff-post :last-child {
+  .stuff-post:last-child {
     margin-bottom: 0;
   }
 
