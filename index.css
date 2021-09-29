@@ -133,7 +133,7 @@ body {
 }
 
 .links li a:hover {
-text-decoration: underline;
+  text-decoration: underline;
 }
 
 .links:first-child {
@@ -232,13 +232,17 @@ text-decoration: underline;
   border: 3px solid rgb(181, 159, 91, 0.6);
 }
 
-.trends-post-content h3 a{
+.trends-post-content h3 a {
   font-size: 20px;
   line-height: 1.2;
   color: #ffffff;
   font-weight: bold;
   text-transform: uppercase;
   text-decoration: none;
+}
+
+.trends-post-content h3 a:hover {
+  color: #b59f5b;
 }
 
 .trends-post-content .tags {
@@ -273,8 +277,9 @@ text-decoration: underline;
 
 .post img {
   width: 381px;
-  height: 294px;
+  object-fit:contain;
   margin-right: 30px;
+  margin-bottom: auto;
 }
 
 .tags {
@@ -434,7 +439,8 @@ span.author {
   border: none;
 }
 
-.search .button:hover, .subscribe .button:hover {
+.search .button:hover,
+.subscribe .button:hover {
   background-color: #313131;
 }
 
@@ -516,7 +522,9 @@ span.author {
   color: #b59f5b;
 }
 
-.themes sup {
+.sup {
+  font-size: 12px;
+  vertical-align: 40%;
   margin-left: 4px;
   color: #b59f5b;
 }
