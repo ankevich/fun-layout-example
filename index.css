@@ -152,10 +152,8 @@ body {
 }
 
 .trends {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
   margin-top: 60px;
+  text-align: center;
 }
 
 .trends h2 {
@@ -530,9 +528,10 @@ span.author {
 }
 
 .stuff {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  text-align: center;
+  max-width: 1170px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .stuff h2 {
@@ -552,9 +551,10 @@ span.author {
 }
 
 .stuff-posts {
-  max-width: 1170px;
   display: flex;
   justify-content: space-between;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .stuff-post {
@@ -566,7 +566,7 @@ span.author {
   margin-right: 66px;
 }
 
-.stuff-posts:last-child {
+.stuff-posts :last-child {
   margin-right: 0;
 }
 
