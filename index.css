@@ -703,8 +703,8 @@ span.strike {
 }
 
 .popup {
-  display: none;
-  /* display: flex; */
+  /* display: none; */
+  display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
@@ -854,13 +854,12 @@ span.strike {
 }
 
 .radio-group {
-  width: initial;
-  display: inline-block;
+  display: inline;
   font-size: 13px;
 }
 
 .radio-group:nth-of-type(n + 2) {
-  margin-left: 18px;
+  margin-left: 16px;
 }
 .radio:checked ~ .radio-group-text::before {
   background-image: url(svg/form-circle.svg);
